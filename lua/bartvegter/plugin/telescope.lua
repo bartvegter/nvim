@@ -28,7 +28,9 @@ return {
           -- },
         },
         extensions = {
-          fzf = {}
+          fzf = {
+            fuzzy = true
+          }
         },
       }
 
