@@ -34,6 +34,7 @@ return {
 		opts = {
 			ensure_installed = {
 				"prettierd", -- prettier formatter as daemon
+				"prettier", -- prettier formatter as backup for prettierd
 				"stylua", -- lua formatter
 				"isort", -- python formatter
 				"black", -- python formatter
