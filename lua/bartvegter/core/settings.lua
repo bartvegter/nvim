@@ -1,36 +1,43 @@
 local opt = vim.opt
 
-opt.number = true
-opt.relativenumber = true
+opt.clipboard = "unnamedplus" -- Use system clipboard by default
+opt.swapfile = false -- disables the nvim swapfile
+opt.mouse = "a" -- enable mouse support
 
+-- Left column
+opt.number = true -- enable the line number column
+opt.relativenumber = true -- enable relative line numbers for effective motions
 opt.signcolumn = "yes" -- always keep the sign column to stop text from shifting
 
+-- Styling
+vim.g.have_nerd_font = true --
 opt.background = "dark" -- use dark colors for colorschemes that support it
 opt.termguicolors = true -- improve colors for supporting terminals
+opt.cursorline = true -- highlight the active line
+opt.list = true -- enable the display of tabs, (trailing) spaces, etc.
 
-vim.g.have_nerd_font = true
-
-opt.clipboard = "unnamedplus" -- Use system clipboard by default
-
-opt.list = true
-
+-- Better indentation
 opt.tabstop = 2
 opt.shiftwidth = 2
 opt.smartindent = true
-opt.breakindent = true
-opt.wrap = false
+opt.wrap = false -- stop line wrapping
 
-opt.swapfile = false
+opt.scrolloff = 25 -- keeps the active line somewhat centered when scrolling
+opt.inccommand = "split" -- live preview of substitution
 
-opt.cursorline = true
+-- Improving search
+opt.hlsearch = false -- disables persistent highlighting after search
+opt.incsearch = true -- moves to search matches in real time
+opt.ignorecase = true -- ignores case when searching
+opt.smartcase = true -- override ignorecase option when searching with uppercase chars
 
-opt.scrolloff = 10
+-- Hiding the bar underneath the statusline (not needed due to lualine)
+opt.laststatus = 0
+opt.showmode = false
+opt.showcmd = false
+opt.shortmess = vim.opt.shortmess + "F"
 
-opt.inccommand = "split"
-
-opt.mouse = "a"
-
--- Function to highlight the yanked lines
+-- Autocommand to highlight yanked lines
 vim.api.nvim_create_autocmd("TextYankPost", {
 	desc = "Highlight when yanking text",
 	group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
@@ -38,8 +45,3 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 		vim.highlight.on_yank()
 	end,
 })
-
-opt.hlsearch = false -- disables persistent highlighting after search
-opt.incsearch = true -- moves to search matches in real time
-opt.ignorecase = true -- ignores case when searching
-opt.smartcase = true -- override ignorecase option when searching with uppercase chars
