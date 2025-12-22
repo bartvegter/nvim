@@ -1,13 +1,6 @@
 return {
 	{
 		"saghen/blink.cmp",
-		-- config = function()
-		-- 	local capabilities = require("blink.cmp").get_lsp_capabilities()
-		-- 	vim.lsp.config("*", {
-		-- 		capabilities = capabilities,
-		-- 	})
-		-- end,
-
 		-- optional: provides snippets for the snippet source
 		dependencies = {
 			{ "rafamadriz/friendly-snippets" },

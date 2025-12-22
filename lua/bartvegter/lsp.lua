@@ -56,6 +56,11 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
 local severity = vim.diagnostic.severity
 
+local capabilities = require("blink.cmp").get_lsp_capabilities()
+vim.lsp.config("*", {
+	capabilities = capabilities,
+})
+
 vim.diagnostic.config({
 	signs = {
 		text = {
