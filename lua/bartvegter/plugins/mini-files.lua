@@ -1,7 +1,7 @@
 return {
 	{
 		"nvim-mini/mini.files",
-		version = false,
+		version = "*",
 
 		opts = {
 
@@ -18,8 +18,8 @@ return {
 
 			mappings = {
 				close = "q",
-				go_in = "l",
-				go_in_plus = "L",
+				go_in = "L",
+				go_in_plus = "l",
 				go_out = "h",
 				go_out_plus = "H",
 				mark_goto = "'",

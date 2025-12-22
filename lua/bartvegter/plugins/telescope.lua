@@ -17,14 +17,8 @@ return {
 		config = function()
 			require("telescope").setup({
 				pickers = {
-					diagnostics = {
-						theme = "ivy",
-					},
-					-- find_files = {
-					--   theme = "ivy"
-					-- },
-					-- live_grep = {
-					--   theme = "ivy"
+					-- diagnostics = {
+					-- 	theme = "ivy",
 					-- },
 				},
 				extensions = {
@@ -44,7 +38,7 @@ return {
 			vim.keymap.set("n", "<leader>fw", builtin.grep_string, { desc = "Current word" })
 			vim.keymap.set("n", "<leader>fd", builtin.diagnostics, { desc = "Diagnostics" })
 			vim.keymap.set("n", "<leader>fr", builtin.resume, { desc = "Resume last find" })
-			vim.keymap.set("n", "<leader><leader>", builtin.buffers, { desc = "Buffers" })
+			vim.keymap.set("n", "<leader>b", builtin.buffers, { desc = "Buffers" })
 			vim.keymap.set("n", "<leader>fk", builtin.keymaps, { desc = "Keymaps" })
 			vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Help tags" })
 
