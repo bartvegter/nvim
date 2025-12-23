@@ -3,7 +3,7 @@ return {
 		"folke/which-key.nvim",
 		event = "VeryLazy",
 		opts = {
-			preset = "modern",
+			preset = "modern", -- classic, modern or helix
 		},
 		keys = {
 			{

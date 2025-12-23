@@ -27,6 +27,7 @@ return {
 				"graphql",
 				"bash",
 				"dockerfile",
+				"hyprlang",
 				"gitignore",
 			},
 			auto_install = true,
