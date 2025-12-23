@@ -1,11 +1,7 @@
-local keymap = vim.keymap
-
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
--- vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>", { desc = "Source file" })
--- vim.keymap.set("n", "<space>x", ":.lua<CR>", { desc = "Source current line" })
--- vim.keymap.set("v", "<space>x", ":lua<CR>", { desc = "Source highlight" })
+local keymap = vim.keymap
 
 keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
 keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
