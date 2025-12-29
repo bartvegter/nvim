@@ -36,9 +36,8 @@ return {
 			vim.keymap.set("n", "<leader>fG", builtin.git_files, { desc = "Git files" })
 			vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Live grep" })
 			vim.keymap.set("n", "<leader>fw", builtin.grep_string, { desc = "Current word" })
-			vim.keymap.set("n", "<leader>fd", builtin.diagnostics, { desc = "Diagnostics" })
 			vim.keymap.set("n", "<leader>fr", builtin.resume, { desc = "Resume last find" })
-			vim.keymap.set("n", "<leader>b", builtin.buffers, { desc = "Buffers" })
+			vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Buffers" })
 			vim.keymap.set("n", "<leader>fk", builtin.keymaps, { desc = "Keymaps" })
 			vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Help tags" })
 

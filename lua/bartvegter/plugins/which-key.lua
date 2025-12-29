@@ -4,6 +4,13 @@ return {
 		event = "VeryLazy",
 		opts = {
 			preset = "modern", -- classic, modern or helix
+			spec = {
+				{ "<leader>c", group = "Code" },
+				{ "<leader>f", group = "Find" },
+				{ "<leader>g", group = "Git" },
+				{ "<leader>x", group = "Diagnostics/quickfix" },
+				{ "<leader>n", group = "Notifications" },
+			},
 		},
 		keys = {
 			{
@@ -11,7 +18,7 @@ return {
 				function()
 					require("which-key").show({ global = false })
 				end,
-				desc = "Buffer Local Keymaps (which-key)",
+				desc = "List keymaps for current buffer",
 			},
 		},
 	},
