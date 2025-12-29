@@ -7,7 +7,10 @@ return {
 				lualine_a = { "mode" },
 				lualine_b = { "branch" },
 				lualine_c = {
-					{ "diagnostics" },
+					{
+						"diagnostics",
+						symbols = { error = " ", warn = " ", info = "󰠠 ", hint = " " },
+					},
 					{ "filetype", icon_only = true, separator = "", padding = { left = 1, right = 0 } },
 					{ "filename" },
 				},
