@@ -7,6 +7,7 @@ opt.swapfile = false -- disables the nvim swapfile
 -- Styling
 vim.g.have_nerd_font = true -- enables nerd font support for icons
 opt.relativenumber = true -- enable relative line numbers for effective motions
+opt.number = true -- enable current line number
 opt.signcolumn = "yes" -- always keep the sign column to stop text from shifting
 opt.background = "dark" -- use dark colors for colorschemes that support it
 opt.termguicolors = true -- improve colors for supporting terminals
@@ -23,7 +24,7 @@ opt.shiftwidth = 2 -- use 2 spaces as indent width
 opt.expandtab = true -- replace tabs with spaces
 opt.autoindent = true -- copy indent from current line when starting a new line
 opt.smartindent = true -- use smart indentation (extends autoindent)
-opt.wrap = false -- disable line wrapping
+opt.wrap = true -- enable line wrapping
 
 opt.scrolloff = 25 -- keeps the active line somewhat centered when scrolling
 opt.inccommand = "split" -- live preview of substitution
