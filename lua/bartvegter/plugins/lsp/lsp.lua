@@ -5,13 +5,17 @@ return {
 		opts = {
 			-- list LSP servers to install
 			ensure_installed = {
+				"bashls",
 				"cssls",
+				"dockerls",
+				"docker_compose_language_service",
 				"eslint",
 				"html",
 				"lua_ls",
 				"svelte",
 				"tailwindcss",
 				"ts_ls",
+				"yamlls",
 			},
 		},
 		dependencies = {
@@ -41,6 +45,8 @@ return {
 				"black", -- python formatter
 				"pylint",
 				"eslint_d",
+				"shfmt",
+				"shellcheck",
 			},
 		},
 		dependencies = {
