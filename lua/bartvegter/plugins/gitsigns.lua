@@ -1,16 +1,18 @@
 return {
-	{
-		"lewis6991/gitsigns.nvim",
-		opts = {
-			current_line_blame = true,
-			signs = {
-				add = { text = "+" },
-				change = { text = "~" },
-			},
-			signs_staged = {
-				add = { text = "+" },
-				change = { text = "~" },
-			},
-		},
-	},
+  {
+    "lewis6991/gitsigns.nvim",
+    event = { "VeryLazy" },
+
+    opts = {
+      current_line_blame = true,
+      signs = {
+        add = { text = "+" },
+        change = { text = "~" },
+      },
+      signs_staged = {
+        add = { text = "+" },
+        change = { text = "~" },
+      },
+    },
+  },
 }
